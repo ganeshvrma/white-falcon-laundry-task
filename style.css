@@ -122,4 +122,14 @@ ul {
 
 .threecardtext {
   font-size: 0.9rem;
+}
+
+.circlemidimage {
+  width: 70%;
+}
+
+.thumbh-card-heading {
+  padding-top: 10px;
+  border-bottom: 3px solid #8970A3;
+  padding-bottom: 20px;
 }/*# sourceMappingURL=style.css.map */
