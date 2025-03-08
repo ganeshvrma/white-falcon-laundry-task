@@ -78,15 +78,19 @@ ul {
     position: absolute;
     z-index: 99;
     background: #e0aaff;
-    width: 80%;
+    width: 95%;
+    left: 3px;
     top: 77px;
     padding: 16px;
     overflow: hidden;
-    display: none;
   }
 }
 .navbar-collapse.active {
   display: block; /* Show when active class is added */
+}
+
+.navbar-nav .nav-link:hover {
+  background-color: rgb(204, 197, 197);
 }
 
 @media (min-width: 768px) {
@@ -176,10 +180,30 @@ ul {
   justify-content: space-evenly;
 }
 
-@media (max-width: 610px) {
+@media (min-width: 320px) and (max-width: 649px) {
   .four-cards-bottom {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+  }
+}
+@media (min-width: 1024px) {
+  .twosideicon {
+    position: absolute;
+    z-index: 99;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    right: 1px;
+    gap: 1rem;
+    transform: translateY(-40%);
+    padding-bottom: 70px;
+  }
+  .sideimg {
+    width: 90%;
+  }
+}
+@media (max-width: 1023px) {
+  .twosideicon {
+    display: none;
   }
 }/*# sourceMappingURL=style.css.map */
