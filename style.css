@@ -19,6 +19,10 @@ a {
   background-color: #775A95;
 }
 
+.custom-btn {
+  background-color: #775A95;
+}
+
 ul {
   list-style: none;
 }
@@ -94,18 +98,28 @@ ul {
 }
 
 @media (min-width: 768px) {
-  .icon-nav {
-    display: flex;
-    justify-content: space-evenly;
+  .inplength {
+    width: -moz-fit-content;
+    width: fit-content;
   }
-}
-@media (min-width: 768px) {
+  .three-items {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .hgfirst {
+    text-align: end !important;
+  }
+  .paragrdupper {
+    text-align: end !important;
+  }
   .mar-nav {
     margin-left: 100px;
     margin-right: auto;
   }
-}
-@media (min-width: 768px) {
+  .icon-nav {
+    display: flex;
+    justify-content: space-evenly;
+  }
   .carousel-control-prev,
   .carousel-control-next {
     width: auto; /* Prevents buttons from taking extra space */
@@ -138,21 +152,10 @@ ul {
   padding-bottom: 20px;
 }
 
-@media (min-width: 768px) {
-  .three-items {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-  }
-  .three-items .hgfirst {
-    text-align: end !important;
-  }
-  .three-items .paragrdupper {
-    text-align: end !important;
-  }
-  .grimage {
-    width: 100% !important;
-  }
+.grimage {
+  width: 100% !important;
 }
+
 @media (max-width: 767px) {
   .hglast {
     text-align: center !important;
@@ -180,30 +183,32 @@ ul {
   justify-content: space-evenly;
 }
 
-@media (min-width: 320px) and (max-width: 649px) {
-  .four-cards-bottom {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    align-items: center;
-  }
+.cpytext {
+  font-size: 0.8rem;
 }
-@media (min-width: 1024px) {
-  .twosideicon {
-    position: absolute;
-    z-index: 99;
-    display: flex;
-    flex-direction: column;
-    right: 1px;
-    gap: 1rem;
-    transform: translateY(-40%);
-    padding-bottom: 70px;
-  }
-  .sideimg {
-    width: 90%;
-  }
+
+.subbtn:hover {
+  color: black !important;
+  background-color: #e0aaff;
 }
-@media (max-width: 1023px) {
-  .twosideicon {
-    display: none;
-  }
+
+.bgcenterimg {
+  background-color: #775A95;
+}
+
+.bntext {
+  color: white;
+}
+
+.custoom-btn {
+  border: 2px solid white; /* White border */
+  color: white; /* White text */
+  background: transparent; /* Transparent background */
+  box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.7); /* White glow effect */
+  transition: all 0.3s ease-in-out; /* Smooth effect */
+}
+
+.custoom-btn:hover {
+  background: white; /* White background on hover */
+  color: black; /* Black text on hover */
 }/*# sourceMappingURL=style.css.map */
